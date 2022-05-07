@@ -13,4 +13,7 @@ public interface MailDeliveryService {
     //• Create class Sender with the method send in it. As argument this method takes the MailDeliveryService and
     // send the mail using given service.
     //• Your program should ask user (use Scanner) how to send mail and send it using Sender
+    default void get(){
+        System.out.println();
+    }
 }

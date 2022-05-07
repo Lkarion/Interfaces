@@ -9,6 +9,7 @@ public class SenderTest {
     @Test
     void test_send_Normal(){
         MailDeliveryService service = new DHL();
-
+        assertInstanceOf(Email.class, Sender.getService(MailService.EMAIL));
     }
+
 }
